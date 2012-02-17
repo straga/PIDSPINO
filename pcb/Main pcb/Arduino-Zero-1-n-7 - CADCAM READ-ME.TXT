@@ -1,0 +1,45 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'Arduino-Zero-1-n-7.LYT'.
+CADCAM generated at 22:31:15 on 16 февраля 2012 г..
+
+File List
+---------
+Bottom Copper           : Arduino-Zero-1-n-7 - CADCAM Bottom Copper.TXT
+Drill                   : Arduino-Zero-1-n-7 - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height
+
+D10	CIRCLE	D=1.02mm                                    DRAW
+D11	CIRCLE	D=0.3mm                                     DRAW
+D12	CIRCLE	D=0.76mm                                    DRAW
+D13	CIRCLE	D=1.27mm                                    DRAW
+D14	SQUARE	S=2.03mm                                    FLASH
+D15	CIRCLE	D=2.03mm                                    FLASH
+D16	CIRCLE	D=2.54mm                                    FLASH
+D17	CIRCLE	D=3.05mm                                    FLASH
+D18	CIRCLE	D=1.78mm                                    FLASH
+D19	SQUARE	S=1.27mm                                    FLASH
+D70	CIRCLE	D=1.27mm                                    FLASH
+D71	CIRCLE	D=6.35mm                                    FLASH
+D20	CIRCLE	D=0.2mm                                     DRAW
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	1.02mm (0-15)
+T02	0.76mm (0-15)
+T03	1.14mm (0-15)
+T04	1.52mm (0-15)
+T05	3mm (0-15)
+
+
+[END OF FILE]
