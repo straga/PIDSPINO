@@ -6,7 +6,7 @@
  (resolution mm 100000)
  (unit mm)
  (structure
-  (boundary (rect pcb -22.25240 -27.15240 35.35240 26.75240))
+  (boundary (rect pcb -23.15240 -30.17822 40.35240 29.35240))
   (flip_style mirror_first)
   (layer TOP (type signal) (direction horizontal))
   (layer I1 (type signal) (direction off))
@@ -49,14 +49,13 @@
   )
  )
  (placement
-  (component "CONN-SIL6_ANALOG" (place ANALOG 19.22000 -24.60000 front 0))
-  (component "CONN-SIL8_DIGITAL0-7" (place "DIGITAL0-7" 31.84000 23.60000 front -180
+  (component "CONN-SIL6_ANALOG" (place ANALOG 6.52000 -26.40000 front 0))
+  (component "CONN-SIL8_DIGITAL0-7" (place "DIGITAL0-7" 19.34000 22.00000 front -180
   ))
-  (component "CONN-SIL8_DIGITAL8-13" (place "DIGITAL8-13" 10.09000 23.68000 front -180
+  (component "CONN-SIL8_DIGITAL8-13" (place "DIGITAL8-13" -2.51000 21.98000 front -180
   ))
-  (component "CONN-SIL18_LCD1" (place LCD1 32.30000 3.77761 front 180))
-  (component "CONN-SIL6_POWER" (place POWER 1.96000 -24.70000 front 0))
-  (component "PRE-THUMB_RV2" (place RV2 27.18000 17.40000 front 180))
+  (component "CONN-SIL6_POWER" (place POWER -11.24000 -26.40000 front 0))
+  (component "CONN-SIL18_LCD1" (place LCD1 -5.10540 -4.28475 front 0))
  )
  (library
   (image "CONN-SIL6_ANALOG" (side front)
@@ -90,6 +89,15 @@
    (pin PS0 (rotate 0) 6 15.24000 0.00000)
    (pin PS0 (rotate 0) 7 17.78000 0.00000)
   )
+  (image "CONN-SIL6_POWER" (side front)
+   (outline (rect TOP -1.37160 -1.37160 14.07160 1.37160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+  )
   (image "CONN-SIL18_LCD1" (side front)
    (outline (rect TOP -1.37160 -1.37160 44.55160 1.37160))
    (pin PS0 (rotate 0) 0 0.00000 0.00000)
@@ -111,21 +119,6 @@
    (pin PS0 (rotate 0) 16 40.64000 0.00000)
    (pin PS0 (rotate 0) 17 43.18000 0.00000)
   )
-  (image "CONN-SIL6_POWER" (side front)
-   (outline (rect TOP -1.37160 -1.37160 14.07160 1.37160))
-   (pin PS0 (rotate 0) 0 0.00000 0.00000)
-   (pin PS0 (rotate 0) 1 2.54000 0.00000)
-   (pin PS0 (rotate 0) 2 5.08000 0.00000)
-   (pin PS0 (rotate 0) 3 7.62000 0.00000)
-   (pin PS0 (rotate 0) 4 10.16000 0.00000)
-   (pin PS0 (rotate 0) 5 12.70000 0.00000)
-  )
-  (image "PRE-THUMB_RV2" (side front)
-   (outline (rect TOP -3.91160 -2.00660 3.91160 9.62660))
-   (pin PS1 (rotate 0) 0 -2.54000 0.00000)
-   (pin PS1 (rotate 0) 1 2.54000 0.00000)
-   (pin PS1 (rotate 0) 2 0.00000 0.00000)
-  )
   (padstack PS0 (absolute on)
    (shape (rect TOP -1.01600 -1.01600 1.01600 1.01600))
    (shape (rect I1 -1.01600 -1.01600 1.01600 1.01600))
@@ -143,24 +136,6 @@
    (shape (rect I13 -1.01600 -1.01600 1.01600 1.01600))
    (shape (rect I14 -1.01600 -1.01600 1.01600 1.01600))
    (shape (rect BOT -1.01600 -1.01600 1.01600 1.01600))
-  )
-  (padstack PS1 (absolute on)
-   (shape (circle TOP 2.03200 0 0))
-   (shape (circle I1 2.03200 0 0))
-   (shape (circle I2 2.03200 0 0))
-   (shape (circle I3 2.03200 0 0))
-   (shape (circle I4 2.03200 0 0))
-   (shape (circle I5 2.03200 0 0))
-   (shape (circle I6 2.03200 0 0))
-   (shape (circle I7 2.03200 0 0))
-   (shape (circle I8 2.03200 0 0))
-   (shape (circle I9 2.03200 0 0))
-   (shape (circle I10 2.03200 0 0))
-   (shape (circle I11 2.03200 0 0))
-   (shape (circle I12 2.03200 0 0))
-   (shape (circle I13 2.03200 0 0))
-   (shape (circle I14 2.03200 0 0))
-   (shape (circle BOT 2.03200 0 0))
   )
   (padstack $VIA_POWER (absolute on)
    (shape (circle TOP 1.27000 0 0))
@@ -205,14 +180,14 @@
     (use_layer TOP BOT)
     (use_via $VIA_SIGNAL)
    )
-   (pins LCD1-2 RV2-2)
+   (pins LCD1-2)
   )
   (net "+5V"
    (circuit
     (use_layer TOP BOT)
     (use_via $VIA_POWER)
    )
-   (pins LCD1-1 LCD1-15 POWER-2 RV2-0)
+   (pins POWER-2 LCD1-1 LCD1-14)
   )
   (net "A0"
    (circuit
@@ -366,7 +341,7 @@
     (use_layer TOP BOT)
     (use_via $VIA_POWER)
    )
-   (pins "DIGITAL8-13"-6 LCD1-0 LCD1-4 LCD1-14 POWER-3 POWER-4 RV2-1)
+   (pins "DIGITAL8-13"-6 POWER-3 POWER-4 LCD1-0 LCD1-4 LCD1-15)
   )
   (class POWER
    "+5V"
@@ -422,17 +397,7 @@
   )
  )
  (wiring
-   (wire (path BOT 0.30480 6.90000 3.77761 6.90000 9.98500 14.06000 17.14500 14.06000 23.60000
-  ) (net "D7"))
-   (wire (path BOT 0.30480 9.58000 -24.70000 9.58000 -26.67000 12.12000 -26.67000 12.12000 -24.70000
-  ) (net "GND"))
-   (wire (path BOT 0.30480 -5.15000 23.68000 -5.15000 9.65000 -3.26000 7.76000 -3.26000 3.77761
-  ) (net "GND") (type protect))
-   (wire (path BOT 0.30480 -0.72000 3.77761 -0.72000 13.48000 5.01000 19.21000 5.01000 23.68000
-  ) (net "D10") (type protect))
-   (wire (path BOT 0.30480 1.82000 3.77761 1.82000 12.62000 7.55000 18.35000 7.55000 23.68000
-  ) (net "D9") (type protect))
-   (wire (path BOT 0.30480 4.36000 3.77761 4.36000 11.16000 10.09000 16.89000 10.09000 23.68000
-  ) (net "D8") (type protect))
+   (wire (path BOT 0.30480 -3.62000 -26.40000 -1.08000 -26.40000) (net "GND") (type protect)
+  )
  )
 )

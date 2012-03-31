@@ -1,0 +1,33 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'Arduino-Zero-1-n-7-LCD-SHIELD.LYT'.
+CADCAM generated at 11:29:52 on 21 февраля 2012 г..
+
+File List
+---------
+Bottom Copper           : Arduino-Zero-1-n-7-LCD-SHIELD - CADCAM Bottom Copper.TXT
+Drill                   : Arduino-Zero-1-n-7-LCD-SHIELD - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height
+
+D10	CIRCLE	D=0.76mm                                    DRAW
+D11	CIRCLE	D=1.02mm                                    DRAW
+D12	SQUARE	S=2.03mm                                    FLASH
+D13	CIRCLE	D=2.03mm                                    FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	1.02mm (0-15)
+T02	0.76mm (0-15)
+
+
+[END OF FILE]

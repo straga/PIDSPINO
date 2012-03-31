@@ -1,0 +1,234 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA_POWER
+   (shape (circ TOP 127000 0 0))
+   (shape (circ I1 127000 0 0))
+   (shape (circ I2 127000 0 0))
+   (shape (circ I3 127000 0 0))
+   (shape (circ I4 127000 0 0))
+   (shape (circ I5 127000 0 0))
+   (shape (circ I6 127000 0 0))
+   (shape (circ I7 127000 0 0))
+   (shape (circ I8 127000 0 0))
+   (shape (circ I9 127000 0 0))
+   (shape (circ I10 127000 0 0))
+   (shape (circ I11 127000 0 0))
+   (shape (circ I12 127000 0 0))
+   (shape (circ I13 127000 0 0))
+   (shape (circ I14 127000 0 0))
+   (shape (circ BOT 127000 0 0))
+  )
+  (padstack $VIA_SIGNAL
+   (shape (circ TOP 127000 0 0))
+   (shape (circ I1 127000 0 0))
+   (shape (circ I2 127000 0 0))
+   (shape (circ I3 127000 0 0))
+   (shape (circ I4 127000 0 0))
+   (shape (circ I5 127000 0 0))
+   (shape (circ I6 127000 0 0))
+   (shape (circ I7 127000 0 0))
+   (shape (circ I8 127000 0 0))
+   (shape (circ I9 127000 0 0))
+   (shape (circ I10 127000 0 0))
+   (shape (circ I11 127000 0 0))
+   (shape (circ I12 127000 0 0))
+   (shape (circ I13 127000 0 0))
+   (shape (circ I14 127000 0 0))
+   (shape (circ BOT 127000 0 0))
+  )
+  )
+  (network_out
+   (Net #00046 
+   (rule
+   )
+   )
+   (Net +5V 
+   (rule
+   )
+   (wire (path BOT 30480  3045460 -428475 3045460 -635000 -256540 -635000)
+    (connect (terminal pin LCD1-14) (terminal wire))
+   )
+   (wire (path BOT 30480  -256540 -635000 -256540 -428475)
+    (connect (terminal wire) (terminal pin LCD1-1))
+   )
+   (wire (path BOT 30480  -616000 -2640000 -616000 -1305482 -256540 -1305482
+     -256540 -635000)
+    (connect (terminal pin POWER-2) (terminal wire))
+   )
+   )
+   (Net A0 
+   (rule
+   )
+   )
+   (Net A1 
+   (rule
+   )
+   )
+   (Net A2 
+   (rule
+   )
+   )
+   (Net A3 
+   (rule
+   )
+   )
+   (Net A4 
+   (rule
+   )
+   )
+   (Net A5 
+   (rule
+   )
+   )
+   (Net AREF 
+   (rule
+   )
+   )
+   (Net D0 
+   (rule
+   )
+   )
+   (Net D1 
+   (rule
+   )
+   )
+   (Net D10 
+   (rule
+   )
+   (wire (path TOP 30480  2791460 -428475 2791460 1278126 -759000 1278126
+     -759000 2198000)
+    (connect (terminal pin LCD1-13) (terminal pin DIGITAL8-13-2))
+   )
+   )
+   (Net D11 
+   (rule
+   )
+   (wire (path BOT 30480  -1013000 2198000 -1013000 352342 759460 352342
+     759460 -428475)
+    (connect (terminal pin DIGITAL8-13-3) (terminal pin LCD1-5))
+   )
+   )
+   (Net D12 
+   (rule
+   )
+   )
+   (Net D13 
+   (rule
+   )
+   (wire (path BOT 30480  -1521000 2198000 -1521000 190500 251460 190500
+     251460 -428475)
+    (connect (terminal pin DIGITAL8-13-5) (terminal pin LCD1-3))
+   )
+   )
+   (Net D2 
+   (rule
+   )
+   )
+   (Net D3 
+   (rule
+   )
+   )
+   (Net D4 
+   (rule
+   )
+   )
+   (Net D5 
+   (rule
+   )
+   )
+   (Net D6 
+   (rule
+   )
+   )
+   (Net D7 
+   (rule
+   )
+   (wire (path BOT 30480  2029460 -428475 2029460 705280 156000 705280
+     156000 2200000)
+    (connect (terminal pin LCD1-10) (terminal pin DIGITAL0-7-7))
+   )
+   )
+   (Net D8 
+   (rule
+   )
+   (wire (path BOT 30480  2283460 -428475 2283460 2349500 -251000 2349500
+     -251000 2198000)
+    (connect (terminal pin LCD1-11) (terminal pin DIGITAL8-13-0))
+   )
+   )
+   (Net D9 
+   (rule
+   )
+   (wire (path BOT 30480  2537460 -428475 2537460 2476500 -505000 2476500
+     -505000 2198000)
+    (connect (terminal pin LCD1-12) (terminal pin DIGITAL8-13-1))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 30480  -510540 -428475 -1333500 -428475 -1333500 -2857500
+     -362000 -2857500 -362000 -2640000)
+    (connect (terminal pin LCD1-0) (terminal pin POWER-3))
+   )
+   (wire (path BOT 30480  -510540 -428475 -825500 -428475 -825500 -127000
+     -1775000 -127000)
+    (connect (terminal pin LCD1-0) (terminal wire))
+   )
+   (wire (path TOP 30480  3299460 -428475 3299460 -635000 505460 -635000
+     505460 -428475)
+    (connect (terminal pin LCD1-15) (terminal pin LCD1-4))
+   )
+   (wire (path BOT 30480  -1775000 -127000 -1775000 2198000)
+    (connect (terminal wire) (terminal pin DIGITAL8-13-6))
+   )
+   (wire (path TOP 30480  -510540 -428475 -510540 -190500 505460 -190500
+     505460 -428475)
+    (connect (terminal pin LCD1-0) (terminal pin LCD1-4))
+   )
+   (wire (path BOT 30480  -362000 -2640000 -108000 -2640000)
+    (connect (terminal pin POWER-3) (terminal pin POWER-4))
+    (type protect)
+   )
+   )
+  )
+ )
